@@ -1,53 +1,36 @@
 package kr.co.wero.www.sksk
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.os.Process.myPid
 import android.view.KeyEvent
+import android.view.MotionEvent
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_installfirst.*
 
-class MainActivity : AppCompatActivity() {
-
+class installfirst : AppCompatActivity() {
     private var mFlag = false
     private val mHandler: Handler = Handler()
-    var install_first = true
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        intro()
-        Handler().postDelayed({
-            // todo
-            init()
-        },2000)
+        setContentView(R.layout.activity_installfirst)
 
-
-
-    }
-
-    fun intro(){
-        val intro_intent= Intent(applicationContext,intro::class.java)
-
-        intro_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-        intro_intent.addFlags((Intent.FLAG_ACTIVITY_NEW_TASK))
-        startActivity(intro_intent)
-    }
-
-
-    fun init(){
-        if(install_first){
-            //install first
-            val first= Intent(applicationContext,installfirst::class.java)
-            first.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            first.addFlags((Intent.FLAG_ACTIVITY_NEW_TASK))
-            startActivity(first);
+        skip_btn.setOnClickListener{
+            val login=Intent(applicationContext,login::class.java)
+            login.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            login.addFlags((Intent.FLAG_ACTIVITY_NEW_TASK))
+            startActivity(login)
         }
-        else{
-            //already installed
-        }
-    }
 
+
+
+
+
+
+    }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
 
@@ -73,7 +56,5 @@ class MainActivity : AppCompatActivity() {
         else return super.onKeyDown(keyCode, event)
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-    }
+
 }
