@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".createidpw"></activity>
+        <activity android:name=".personal_privacy_policy"></activity>
+        <activity android:name=".find_account" />
+        <activity android:name=".createidpw" />
         <activity android:name=".login" />
         <activity android:name=".installfirst" />
         <activity android:name=".intro" />

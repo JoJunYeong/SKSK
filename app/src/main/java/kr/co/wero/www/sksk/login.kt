@@ -23,6 +23,15 @@ class login : AppCompatActivity() {
         }
 
 
+        find_account.setOnClickListener {
+            val find_account= Intent(applicationContext,find_account::class.java)
+            startActivity(find_account)
+        }
+
+        privacy_policy.setOnClickListener {
+            val personal_privacy_policy= Intent(applicationContext,personal_privacy_policy::class.java)
+            startActivity(personal_privacy_policy)
+        }
 
 
 
