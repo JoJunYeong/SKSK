@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".createidpw">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_weight="1.5">
+        >
 
 
     <LinearLayout
+        android:id="@+id/create_first_layout"
+        android:visibility="gone"
         android:layout_marginBottom="10dp"
         android:paddingTop="20dp"
         android:paddingLeft="20dp"
@@ -174,10 +175,280 @@
 
     </LinearLayout>
 
+             <!--   여기를 기점으로 회원가입 페이지 1,2 가 나뉘어집니다.    -->
+
+        <LinearLayout
+            android:id="@+id/create_second_layout"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textStyle="bold"
+                android:textSize="40dp"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/imageView_sub"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <ImageView
+                            android:id="@+id/imageView_sub2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            tools:srcCompat="@tools:sample/avatars" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/imageView_sub3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <ImageView
+                            android:id="@+id/imageView_sub4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            tools:srcCompat="@tools:sample/avatars" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:text="사진은 대표사진 포함 최소 3장 이상 업로드 되어야 합니다 :)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/picture_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="업로드"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="6">
+                <TextView
+                    android:text="직업 : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:text="직장 : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/work_place_certification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="직장인증"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:text="관심사(3개선택)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:textSize="20dp"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="농구" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:text="생년월일 : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:text="전화번호 : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="인증하기"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.2"
+        android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -197,20 +468,23 @@
 
         <Button
 
-            android:background="@android:color/holo_red_dark"
-            android:textColor="@android:color/white"
             android:id="@+id/next"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="38dp"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:text="다음"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="다음(1/2)"
+            android:textColor="@android:color/white"
             android:textSize="15dp"
-            android:layout_marginTop="5dp"/>
+            android:textStyle="bold" />
 
 
     </LinearLayout>
 
     </LinearLayout>
+
+
+
 </ScrollView>
