@@ -23,7 +23,7 @@ class login : AppCompatActivity() {
         }
 
 
-        find_account.setOnClickListener {
+        findaccount.setOnClickListener {
             val find_account= Intent(applicationContext,find_account::class.java)
             startActivity(find_account)
         }

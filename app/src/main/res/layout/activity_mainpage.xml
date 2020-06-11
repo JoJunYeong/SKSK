@@ -9,6 +9,7 @@
 
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -28,35 +29,39 @@
 
             <ImageButton
                 android:id="@+id/profile_btn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_weight="0.2"
-                android:background="@android:drawable/ic_menu_myplaces"
-                android:backgroundTint="#000000"
-                 />
+                android:backgroundTint="#00FFFFFF"
 
-            <TextView
-                android:id="@+id/textView2"
+                app:srcCompat="@drawable/profile" />
+            <ImageView
+                android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.1"
-                android:layout_gravity="center"
                 android:gravity="center"
-                android:textSize="30dp"
-                android:text="심쿵신쿵" />
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/appname" />
 
             <ImageButton
                 android:id="@+id/chat_btn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_weight="0.2"
                 android:backgroundTint="#00F4E6E6"
                 android:layout_gravity="center"
-                app:srcCompat="@android:drawable/sym_action_chat" />
+                app:srcCompat="@drawable/chat" />
+
+
+
+
         </LinearLayout>
 
         <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/mainpage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -101,8 +106,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
                 android:orientation="horizontal"
+                android:layout_marginTop="30dp"
                 android:layout_weight="2"
                 >
 
@@ -149,6 +154,9 @@
 
 
         </LinearLayout>
+
+
+
 
 
 

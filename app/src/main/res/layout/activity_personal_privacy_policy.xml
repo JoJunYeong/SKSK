@@ -101,14 +101,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@android:color/holo_red_dark"
             android:text="뒤로가기"
             android:textColor="@android:color/white"
             android:textSize="15dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
 
     </LinearLayout>
