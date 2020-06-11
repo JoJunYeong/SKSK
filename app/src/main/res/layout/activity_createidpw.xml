@@ -14,7 +14,7 @@
 
     <LinearLayout
         android:id="@+id/create_first_layout"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_marginBottom="10dp"
         android:paddingTop="20dp"
         android:paddingLeft="20dp"
@@ -179,7 +179,7 @@
 
         <LinearLayout
             android:id="@+id/create_second_layout"
-            android:visibility="visible"
+            android:visibility="gone"
             android:layout_marginBottom="10dp"
             android:paddingTop="20dp"
             android:paddingLeft="20dp"
@@ -360,24 +360,93 @@
 
             <LinearLayout
                 android:paddingTop="10dp"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="1">
+                android:orientation="vertical"
+               >
 
 
                 <LinearLayout
                     android:paddingTop="10dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:gravity="center"
+                    android:layout_weight="10"
+                    >
 
                     <CheckBox
-                        android:id="@+id/checkBox"
+                        android:id="@+id/hobby_movie"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="영화" />
+                    <CheckBox
+                        android:id="@+id/hobby_workout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="운동" />
+                    <CheckBox
+                        android:id="@+id/hobby_walk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="산책" />
+                    <CheckBox
+                        android:id="@+id/hobby_music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="음악" />
+                    <CheckBox
+                        android:id="@+id/hobby_cafe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="카페" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight="10"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/hobby_computer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="컴퓨터" />
+                    <CheckBox
+                        android:id="@+id/hobby_game"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="게임" />
+                    <CheckBox
+                        android:id="@+id/hobby_sleep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="잠자기" />
+                    <CheckBox
+                        android:id="@+id/hobby_basketball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
                         android:text="농구" />
+                    <CheckBox
+                        android:id="@+id/hobby_soccer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="축구" />
 
                 </LinearLayout>
 
@@ -453,7 +522,7 @@
         android:orientation="horizontal">
 
         <Button
-
+            android:visibility="visible"
             android:background="@android:color/holo_red_dark"
             android:textColor="@android:color/white"
             android:id="@+id/back"
@@ -467,18 +536,46 @@
             android:layout_marginTop="5dp"/>
 
         <Button
-
+            android:visibility="visible"
             android:id="@+id/next"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
-            android:layout_height="38dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@android:color/holo_red_dark"
             android:text="다음(1/2)"
-            android:textColor="@android:color/white"
             android:textSize="15dp"
-            android:textStyle="bold" />
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/previous"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="이전(1/2)"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/done"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="제출(2/2)"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp" />
 
 
     </LinearLayout>
