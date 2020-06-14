@@ -1,0 +1,15 @@
+package kr.co.wero.www.sksk
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+
+class ContentPagerAdapter: Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View=inflater.inflate(R.layout.activity_message,container,false)
+}

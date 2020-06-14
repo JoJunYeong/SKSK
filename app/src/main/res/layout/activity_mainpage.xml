@@ -93,14 +93,15 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/person_image"
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/profilePager"
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:layout_gravity="center"
-                android:background="#000000"
-                android:layout_weight="5.5"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:layout_height="500dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+
 
 
             <LinearLayout
