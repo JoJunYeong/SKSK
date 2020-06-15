@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Message_Like_Heart_Activity"></activity>
+        <activity android:name=".OtherProfile"></activity>
         <activity android:name=".Message" />
+        <activity android:name=".Message_Like_Heart_Activity" />
         <activity android:name=".GameList" />
         <activity android:name=".ProfileChange" />
         <activity android:name=".settings" />

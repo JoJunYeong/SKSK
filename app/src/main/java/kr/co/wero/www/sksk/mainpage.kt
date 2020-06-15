@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.KeyEvent
 import android.widget.Toast
+import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_mainpage.*
 
@@ -28,10 +29,30 @@ class mainpage : AppCompatActivity() {
             startActivity(settings)
         }
 
+        var list=ArrayList<Int>()
+        list.add(1)
+        list.add(2)
+        list.add(3)
+        list.add(4)
+
+        val profile=findViewById<ViewPager>(R.id.profile)
+        profile.adapter=ProfileAdapter(list)
+
+        profile.setOnClickListener{
+            val intent=Intent(applicationContext,OtherProfile::class.java)
+            startActivity(intent)
+        }
 
 
+        chat_btn.setOnClickListener{
+            val intent=Intent(applicationContext,Message::class.java)
+            startActivity(intent)
+        }
 
-
+        btn_game.setOnClickListener{
+            val intent=Intent(applicationContext,GameList::class.java)
+            startActivity(intent)
+        }
 
 
 
