@@ -9,12 +9,11 @@ import kr.co.wero.www.sksk.R
 class RankAdapter(var items:ArrayList<Int>):RecyclerView.Adapter<RankAdapter.MyViewHolder>() {
 
     inner class MyViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+        init{
 
+        }
     }
 
-    interface itemClickListener{
-        fun itemclick(viewholder:MyViewHolder,view:View,data:items[adpaterposition],)
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val v=LayoutInflater.from(parent.context).inflate(R.layout.rank_layout,parent,false)

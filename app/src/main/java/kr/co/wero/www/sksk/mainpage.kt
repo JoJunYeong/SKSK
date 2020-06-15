@@ -25,8 +25,10 @@ class mainpage : AppCompatActivity() {
 
 
         profile_btn.setOnClickListener {
-            val settings= Intent(applicationContext,settings::class.java)
-            startActivity(settings)
+            /*val settings= Intent(applicationContext,settings::class.java)
+            startActivity(settings)*/
+            val intent=Intent(applicationContext,MyProfile::class.java)
+            startActivity(intent)
         }
 
         var list=ArrayList<Int>()

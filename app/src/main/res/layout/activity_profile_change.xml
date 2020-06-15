@@ -341,6 +341,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <Button
+                        android:id="@+id/saveBtn"
                         android:text="저장"
                         android:textColor="#ffffff"
                         android:background="#ff0000"

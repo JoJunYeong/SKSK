@@ -23,8 +23,7 @@ class GameList : AppCompatActivity() {
         }
 
         back_Btn.setOnClickListener {
-            val intent=Intent(applicationContext,mainpage::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 }
