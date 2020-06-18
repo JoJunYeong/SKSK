@@ -72,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_weight="1"
                >
 
             <TextView
@@ -88,17 +87,17 @@
                 android:id="@+id/heartbeat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:textSize="20dp"
                 android:text="00" />
 
             </LinearLayout>
 
             <androidx.viewpager.widget.ViewPager
-                android:id="@+id/profilePager"
+                android:id="@+id/profile"
                 android:layout_width="match_parent"
-                android:layout_height="500dp">
-
-            </androidx.viewpager.widget.ViewPager>
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
 
 
 
@@ -106,10 +105,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:orientation="horizontal"
                 android:layout_marginTop="30dp"
-                android:layout_weight="2"
                 >
 
 

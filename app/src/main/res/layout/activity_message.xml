@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Message">
+    tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,34 +47,30 @@
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/layout_tab"
+        android:id="@+id/tab"
+        android:layout_weight="5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tabGravity="center"
-        app:tabMode="fixed"
-        app:tabTextColor="#000000"
-        app:tabSelectedTextColor="@color/colorPrimary"
-        app:tabIndicatorColor="@color/colorPrimary">
-        <com.google.android.material.tabs.TabItem
-            android:text="메시지"
-            android:id="@+id/message"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-        <com.google.android.material.tabs.TabItem
-            android:text="좋아요"
-            android:id="@+id/like"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-        <com.google.android.material.tabs.TabItem
-            android:text="심쿵"
-            android:id="@+id/heart"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-    </com.google.android.material.tabs.TabLayout>
+        android:layout_height="match_parent"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/message_back"
+            android:text="뒤로가기"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 </LinearLayout>

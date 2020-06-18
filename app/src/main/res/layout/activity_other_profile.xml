@@ -116,18 +116,6 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:gravity="center"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:background="#ff0000"
-                    android:textColor="#ffffff"
-                    android:fontFamily="@font/nanumsquarer"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:text="업로드"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
             <LinearLayout
@@ -149,8 +137,8 @@
                         android:text="직업"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
-                    <EditText
-                        android:hint="직업을 입력해주세요"
+                    <TextView
+                        android:text="직업"
                         android:layout_weight="1"
                         android:background="@drawable/underline"
                         android:layout_width="match_parent"
@@ -170,23 +158,12 @@
                         android:text="직장/\n학교"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
-                    <EditText
+                    <TextView
+                        android:text="직장/학교"
+                        android:layout_weight="1"
                         android:background="@drawable/underline"
-                        android:hint="직업을 입력해주세요"
-                        android:layout_weight="2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
-                    <Button
-                        android:background="#ff0000"
-                        android:textColor="#ffffff"
-                        android:textSize="15dp"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="5dp"
-                        android:layout_weight="4"
-                        android:text="인증"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -249,16 +226,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
-                    <ImageButton
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="20dp"
-                        android:padding="10dp"
-                        android:background="@drawable/round"
-                        android:backgroundTint="#ffffff"
-                        android:src="@drawable/plus"
-                        android:scaleType="fitXY"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -322,33 +289,34 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
-                    <ImageButton
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="20dp"
-                        android:padding="10dp"
-                        android:background="@drawable/round"
-                        android:backgroundTint="#ffffff"
-                        android:src="@drawable/plus"
-                        android:scaleType="fitXY"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_marginTop="20dp"
                     android:gravity="center"
+                    android:orientation="horizontal"
                     android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <Button
-                        android:id="@+id/saveBtn"
-                        android:text="저장"
-                        android:textColor="#ffffff"
+                        android:id="@+id/back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:background="#ff0000"
+                        android:gravity="center"
+                        android:text="뒤로가기"
+                        android:textColor="#ffffff"
                         android:textSize="20dp"
                         android:textStyle="bold"
+                        android:layout_marginRight="20dp"/>
+                    <ImageButton
+                        android:src="@drawable/like"
+                        android:layout_gravity="right"
+                        android:gravity="right"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
                 </LinearLayout>
             </LinearLayout>
 

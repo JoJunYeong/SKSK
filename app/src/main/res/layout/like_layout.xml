@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_weight="4"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="나를 좋아한 사람을\n확인 할 수 있습니다."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TableLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:background="@drawable/circle"
+                android:src="@drawable/boy"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <ImageView
+                android:background="@drawable/circle"
+                android:layout_weight="1"
+                android:src="@drawable/boy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1">
+            <ImageView
+                android:background="@drawable/circle"
+                android:layout_weight="1"
+                android:src="@drawable/boy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <ImageView
+                android:background="@drawable/circle"
+                android:layout_weight="1"
+                android:src="@drawable/boy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

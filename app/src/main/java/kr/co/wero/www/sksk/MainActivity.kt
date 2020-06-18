@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        /*intro()
+        intro()
         Handler().postDelayed({
             // todo
             init()
-        },2000)*/
+        },2000)
 
-        val intent=Intent(applicationContext,Message::class.java)
+        val intent=Intent(applicationContext,mainpage::class.java)
         startActivity(intent)
 
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="500dp"
+    android:id="@+id/profile_resource"
     xmlns:tools="http://schemas.android.com/tools">
         <ImageView
             android:id="@+id/person_image"
@@ -10,7 +11,7 @@
             android:layout_gravity="center"
             android:background="#000000"
             android:layout_weight="5.5"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@drawable/boy" />
         <View
             android:background="#E6ffffff"
             android:layout_width="match_parent"
@@ -65,6 +66,86 @@
             <TableLayout
                 android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:stretchColumns="*"
+                android:layout_gravity="center_vertical">
+                <TableRow>
+                    <TextView
+                        android:text="농구"
+                        android:gravity="center"
+                        android:backgroundTint="#40ff0000"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/round"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="축구"
+                        android:gravity="center"
+                        android:backgroundTint="#40ff0000"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/round"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="영화보기"
+                        android:gravity="center"
+                        android:backgroundTint="#40ff0000"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/round"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="꼼꼼"
+                        android:gravity="center"
+                        android:backgroundTint="#40ff0000"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/round"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="섬세"
+                        android:gravity="center"
+                        android:backgroundTint="#40ff0000"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/round"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="애완동물"
+                        android:gravity="center"
+                        android:backgroundTint="#40ff0000"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/round"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </TableRow>
+            </TableLayout>
         </LinearLayout>
 </FrameLayout>
