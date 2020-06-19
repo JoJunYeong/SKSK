@@ -23,6 +23,7 @@ class BluetoothSearch2 : AppCompatActivity() {
 
     companion object {
         val EXTRA_ADDRESS: String = "Device_address"
+        val EXTRA_NAME : String = "Device_name"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +49,7 @@ class BluetoothSearch2 : AppCompatActivity() {
         if (!m_pairedDevices.isEmpty()) {
             for (device: BluetoothDevice in m_pairedDevices) {
                 list.add(device)
+
                 Log.i("device", ""+device)
             }
         } else {
@@ -58,10 +60,12 @@ class BluetoothSearch2 : AppCompatActivity() {
         listview.adapter = adapter
         listview.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             val device: BluetoothDevice = list[position]
+            val name : String =  device.name
             val address: String = device.address
 
             val intent = Intent(this, mainpage::class.java)
             intent.putExtra(EXTRA_ADDRESS, address)
+            intent.putExtra(EXTRA_NAME, name)
             startActivity(intent)
         }
     }
