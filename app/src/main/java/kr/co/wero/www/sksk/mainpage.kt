@@ -9,7 +9,15 @@ import android.widget.Toast
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_mainpage.*
-
+import android.app.ProgressDialog
+import android.bluetooth.BluetoothAdapter
+import android.bluetooth.BluetoothDevice
+import android.content.Context
+import android.os.AsyncTask
+import java.util.*
+import android.bluetooth.BluetoothSocket
+import android.util.Log
+import java.io.IOException
 
 
 
@@ -18,9 +26,24 @@ class mainpage : AppCompatActivity() {
     private var mFlag = false
     private val mHandler: Handler = Handler()
 
+    companion object {
+        var m_myUUID: UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB")
+        var m_bluetoothSocket: BluetoothSocket? = null
+        lateinit var m_progress: ProgressDialog
+        lateinit var m_bluetoothAdapter: BluetoothAdapter
+        var m_isConnected: Boolean = false
+        lateinit var m_address: String
+        lateinit var m_name: String
+    }
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
+
+
+        m_address = intent.getStringExtra(BluetoothSearch2.EXTRA_ADDRESS)
 
 
 /*
