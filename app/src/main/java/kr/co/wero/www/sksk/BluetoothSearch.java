@@ -55,7 +55,7 @@ public class BluetoothSearch extends AppCompatActivity {
 
 
         search = (Button) findViewById(R.id.search);
-        connect = (Button) findViewById(R.id.connect);
+      //  connect = (Button) findViewById(R.id.connect);
 
         listView = (ListView) findViewById(R.id.listview);
 
