@@ -43,7 +43,7 @@ class mainpage : AppCompatActivity() {
         setContentView(R.layout.activity_mainpage)
 
 
-        m_address = intent.getStringExtra(BluetoothSearch2.EXTRA_ADDRESS)
+        m_address = intent.getStringExtra(BluetoothSearch2.EXTRA_NAME)
 
 
 /*
