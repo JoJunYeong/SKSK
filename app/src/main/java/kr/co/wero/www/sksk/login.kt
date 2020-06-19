@@ -17,6 +17,9 @@ class login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+
+
+
         create_account_btn.setOnClickListener {
             val create_idpw= Intent(applicationContext,createidpw::class.java)
             startActivity(create_idpw)
@@ -35,7 +38,7 @@ class login : AppCompatActivity() {
 
 
         login.setOnClickListener {
-            val main= Intent(applicationContext,mainpage::class.java)
+            val main= Intent(applicationContext,BluetoothSearch::class.java)
             startActivity(main)
         }
 
@@ -67,5 +70,7 @@ class login : AppCompatActivity() {
         }
         else return super.onKeyDown(keyCode, event)
     }
+
+
 
 }

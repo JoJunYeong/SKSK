@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
             init()
         },2000)
 
-        val intent=Intent(applicationContext,mainpage::class.java)
-        startActivity(intent)
+
 
 
 

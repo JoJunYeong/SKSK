@@ -23,7 +23,7 @@ class mainpage : AppCompatActivity() {
         setContentView(R.layout.activity_mainpage)
 
 
-
+/*
         profile_btn.setOnClickListener {
             /*val settings= Intent(applicationContext,settings::class.java)
             startActivity(settings)*/
@@ -58,7 +58,7 @@ class mainpage : AppCompatActivity() {
 
 
 
-
+*/
     }
 
 
