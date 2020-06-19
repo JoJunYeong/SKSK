@@ -19,8 +19,8 @@ class BluetoothSearch2 : AppCompatActivity() {
 
     private var m_bluetoothAdapter: BluetoothAdapter? = null
     private lateinit var m_pairedDevices: Set<BluetoothDevice>
-    private lateinit var mNewDeviceArrayAdapter: ArrayAdapter<String>
     private val REQUEST_ENABLE_BLUETOOTH = 1
+
     companion object {
         val EXTRA_ADDRESS: String = "Device_address"
         val EXTRA_NAME : String = "Device_name"
@@ -44,13 +44,13 @@ class BluetoothSearch2 : AppCompatActivity() {
     }
     private fun pairedDeviceList() {
         m_pairedDevices = m_bluetoothAdapter!!.bondedDevices
-        val list : ArrayList<String> = ArrayList()
-        val namelist : ArrayList<String> = ArrayList()
+        val list : ArrayList<BluetoothDevice> = ArrayList()
+
         if (!m_pairedDevices.isEmpty()) {
             for (device: BluetoothDevice in m_pairedDevices) {
-                list.add(device.name+"("+device.address+")")
-                namelist.add(device.name+"("+device.address+")")
-                Log.i("device", ""+device.name)
+                list.add(device)
+
+                Log.i("device", ""+device)
             }
         } else {
             toast("no paired bluetooth devices found")
@@ -59,13 +59,13 @@ class BluetoothSearch2 : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list)
         listview.adapter = adapter
         listview.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
-            val device: String = list[position]
-          //  val name : String =  device.name
-          //  val address: String = device.name
+            val device: BluetoothDevice = list[position]
+            val name : String =  device.name
+            val address: String = device.address
 
             val intent = Intent(this, mainpage::class.java)
- //           intent.putExtra(EXTRA_ADDRESS, address)
-            intent.putExtra(EXTRA_NAME, device)
+            intent.putExtra(EXTRA_ADDRESS, address)
+            intent.putExtra(EXTRA_NAME, name)
             startActivity(intent)
         }
     }
