@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profileChange"
+            android:title="프로필 수정"
+            android:icon="@drawable/ic_icon_profile_change"/>
+        <item
+            android:id="@+id/nav_like"
+            android:title="좋아요"
+            android:icon="@drawable/ic_icon_like"/>
+        <item
+            android:id="@+id/nav_heartRacing"
+            android:title="심쿵"
+            android:icon="@drawable/ic_icon_heart_racing"/>
+        <item
+            android:id="@+id/nav_game"
+            android:title="게임"
+            android:icon="@drawable/ic_icon_game"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:title="설정"
+            android:icon="@drawable/ic_icon_setting"/>
+
+    </group>
+
+</menu>

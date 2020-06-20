@@ -9,13 +9,18 @@ import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import android.os.Handler
+import android.provider.ContactsContract
 import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.viewpager.widget.ViewPager
+import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_mainpage.*
 import java.io.IOException
 import java.io.InputStream
@@ -26,6 +31,9 @@ class mainpage : AppCompatActivity() {
 
     private var mFlag = false
     private val mHandler: Handler = Handler()
+    lateinit var drawerlayout: DrawerLayout
+    lateinit var navigationView: NavigationView
+    lateinit var toolbar:androidx.appcompat.widget.Toolbar
 
 
 
@@ -54,50 +62,134 @@ class mainpage : AppCompatActivity() {
         setContentView(R.layout.activity_mainpage)
 
 
-        m_address = intent.getStringExtra(BluetoothSearch2.EXTRA_NAME)
+//        m_address = intent.getStringExtra(BluetoothSearch2.EXTRA_NAME)
+//
+//        ConnectToDevice(this).execute()
+//
+//        mTxtReceive = findViewById<View>(R.id.heartbeat) as TextView
+        drawerlayout=findViewById(R.id.drawerlayout)
+        navigationView=findViewById(R.id.nav_view)
+        toolbar=findViewById(R.id.mytoolbar)
 
-        ConnectToDevice(this).execute()
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        mTxtReceive = findViewById<View>(R.id.heartbeat) as TextView
+        navigationView.bringToFront()
+        var toggle=
+            ActionBarDrawerToggle(this,drawerlayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close)
+        drawerlayout.addDrawerListener(toggle)
+        toggle.syncState()
 
-
-        profile_btn.setOnClickListener {
-            /*val settings= Intent(applicationContext,settings::class.java)
-            startActivity(settings)*/
-            val intent=Intent(applicationContext,MyProfile::class.java)
+        message.setOnClickListener {
+            val intent=Intent(applicationContext,chating_final::class.java)
             startActivity(intent)
         }
+        detail.setOnClickListener {
+            detail.visibility=View.GONE
+        }
 
+        navigationView.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.nav_profileChange->{
+                    //Toast.makeText(applicationContext,"프로필 수정 click",Toast.LENGTH_SHORT).show()
+                    drawerlayout.closeDrawer(GravityCompat.START)
+                    val intent=Intent(applicationContext,ProfileChange::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_like->{
+                    //Toast.makeText(applicationContext,"좋아요 click",Toast.LENGTH_SHORT).show()
+                    drawerlayout.closeDrawer(GravityCompat.START)
+                    val intent=Intent(applicationContext,like_final::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_heartRacing->{
+                    //Toast.makeText(applicationContext,"심쿵 click",Toast.LENGTH_SHORT).show()
+                    drawerlayout.closeDrawer(GravityCompat.START)
+                    val intent=Intent(applicationContext,heartRacing_final::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_game->{
+                    //Toast.makeText(applicationContext,"게임 click",Toast.LENGTH_SHORT).show()
+                    drawerlayout.closeDrawer(GravityCompat.START)
+                    val intent=Intent(applicationContext,GameList::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_setting->{
+                    //Toast.makeText(applicationContext,"설정 click",Toast.LENGTH_SHORT).show()
+                    drawerlayout.closeDrawer(GravityCompat.START)
+                    val intent=Intent(applicationContext,settings::class.java)
+                    startActivity(intent)
+                    true
+                }
+                else->{
+                    false
+                }
+            }
+        }
 
+        var is1=true
 
         var list=ArrayList<Int>()
         list.add(1)
         list.add(2)
         list.add(3)
         list.add(4)
+        //profile.setImageResource(R.layout.profile)
+        profile.setImageResource(R.drawable.profile_1)
 
-        val profile=findViewById<ViewPager>(R.id.profile)
-        profile.adapter=ProfileAdapter(list)
+//        val profile=findViewById<ViewPager>(R.id.profile)
+//        var adapter=ProfileAdapter(list)
+//        profile.adapter=ProfileAdapter(list)
 
         profile.setOnClickListener{
-            val intent=Intent(applicationContext,OtherProfile::class.java)
-            startActivity(intent)
+//            val intent=Intent(applicationContext,OtherProfile::class.java)
+//            startActivity(intent)
+            detail.visibility=View.VISIBLE
+        }
+
+        back_btn.setOnClickListener {
+            detail.visibility=View.GONE
+        }
+
+        btn_like.setOnClickListener {
+            heart_event.visibility=View.VISIBLE
+            Handler().postDelayed({
+                heart_event.visibility=View.GONE
+                if(is1){
+                    profile.setImageResource(R.drawable.profile_2)
+                    is1=false
+                }else{
+                    profile.setImageResource(R.drawable.profile_1)
+                    is1=true
+                }
+            },1000)
+        }
+
+        btn_refuse.setOnClickListener {
+            if(is1){
+                profile.setImageResource(R.drawable.profile_2)
+                is1=false
+            }else{
+                profile.setImageResource(R.drawable.profile_1)
+                is1=true
+            }
         }
 
 
-        chat_btn.setOnClickListener{
-            val intent=Intent(applicationContext,Message::class.java)
-            startActivity(intent)
+
+
+    }
+    override fun onBackPressed() {
+        if(drawerlayout.isDrawerOpen(GravityCompat.START)){
+            drawerlayout.closeDrawer(GravityCompat.START)
         }
-
-        btn_game.setOnClickListener{
-            val intent=Intent(applicationContext,GameList::class.java)
-            startActivity(intent)
+        else{
+            super.onBackPressed()
         }
-
-
-
-
     }
 
 

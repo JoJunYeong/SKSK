@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/nav_back"
+    android:gravity="bottom"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/nav_myProfile"
+        android:layout_width="100dp"
+        android:src="@drawable/ic_icon_my_profile"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용자 이름"
+        android:fontFamily="@font/coockierunregular"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/userGender"
+            android:text="사용자 성별"
+            android:textColor="#f2f2f2"
+            android:fontFamily="@font/coockierunregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text=" / "
+            android:textColor="#f2f2f2"
+            android:fontFamily="@font/coockierunregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/userAge"
+            android:text="사용자 나이"
+            android:textColor="#f2f2f2"
+            android:fontFamily="@font/coockierunregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text=" / "
+            android:textColor="#f2f2f2"
+            android:fontFamily="@font/coockierunregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/userJob"
+            android:text="사용자 직업"
+            android:textColor="#f2f2f2"
+            android:fontFamily="@font/coockierunregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -10,9 +10,5 @@ class OtherProfile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_other_profile)
 
-        back_btn.setOnClickListener{
-            val intent= Intent(applicationContext,mainpage::class.java)
-            startActivity(intent)
-        }
     }
 }

@@ -3,15 +3,25 @@ package com.example.fragmentuse
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import kr.co.wero.www.sksk.R
 
 class RankAdapter(var items:ArrayList<Int>):RecyclerView.Adapter<RankAdapter.MyViewHolder>() {
 
+    lateinit var itemclick:OnItemClick
     inner class MyViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+        var pic=itemView.findViewById<ImageView>(R.id.profile)
         init{
+            pic.setOnClickListener {
+                itemclick.itemclick(this,it,items[adapterPosition],adapterPosition)
 
+            }
         }
+    }
+
+    interface OnItemClick{
+        fun itemclick(viewHolder: MyViewHolder,view:View,data:Int, position: Int)
     }
 
 

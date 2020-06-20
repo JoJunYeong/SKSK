@@ -12,170 +12,180 @@
         >
 
 
-    <LinearLayout
-        android:id="@+id/create_first_layout"
-        android:visibility="visible"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1">
-        <TextView
-            android:paddingBottom="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="회원가입"
-            android:textStyle="bold"
-            android:textSize="40dp"/>
         <LinearLayout
-            android:paddingBottom="10dp"
+            android:id="@+id/create_first_layout"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <TextView
-                android:text="ID : "
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:textSize="20dp"
-                android:gravity="center"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-
-        <Button
-            android:id="@+id/id_certify_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@android:color/holo_red_dark"
-            android:text="중복확인"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"
-            android:textStyle="bold" />
-
-
-        <LinearLayout
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_weight="1">
             <TextView
-                android:text="PW : "
+                android:fontFamily="@font/coockierunregular"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textStyle="bold"
+                android:textSize="40dp"/>
+            <LinearLayout
+                android:paddingBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:textSize="20dp"
-                android:gravity="center"/>
-            <EditText
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:fontFamily="@font/coockierunregular"
+                    android:text="ID : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+            <Button
+                android:fontFamily="@font/coockierunregular"
+                android:id="@+id/id_certify_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="중복확인"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:fontFamily="@font/coockierunregular"
+                    android:text="PW : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:fontFamily="@font/coockierunregular"
+                    android:text="PW 확인 : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:fontFamily="@font/coockierunregular"
+                    android:text="이름 : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:textSize="19dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:fontFamily="@font/coockierunregular"
+                    android:text="생년월일 : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:fontFamily="@font/coockierunregular"
+                    android:text="전화번호 : "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Button
+                android:fontFamily="@font/coockierunregular"
+                android:id="@+id/phone_certify_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="인증하기"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
         </LinearLayout>
 
-        <LinearLayout
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <TextView
-                android:text="PW 확인 : "
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:textSize="20dp"
-                android:gravity="center"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <TextView
-                android:text="이름 : "
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:textSize="20dp"
-                android:gravity="center"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <TextView
-                android:text="생년월일 : "
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:textSize="20dp"
-                android:gravity="center"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <TextView
-                android:text="전화번호 : "
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:textSize="20dp"
-                android:gravity="center"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/phone_certify_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@android:color/holo_red_dark"
-            android:text="인증하기"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-             <!--   여기를 기점으로 회원가입 페이지 1,2 가 나뉘어집니다.    -->
+        <!--   여기를 기점으로 회원가입 페이지 1,2 가 나뉘어집니다.    -->
 
         <LinearLayout
             android:id="@+id/create_second_layout"
@@ -189,6 +199,7 @@
             android:orientation="vertical"
             >
             <TextView
+                android:fontFamily="@font/coockierunregular"
                 android:paddingBottom="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -207,7 +218,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:src="@drawable/ic_icon_my_profile"/>
 
                 <LinearLayout
 
@@ -227,16 +238,14 @@
                             android:background="#997328"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-
-                            tools:srcCompat="@tools:sample/avatars" />
+                            android:src="@drawable/ic_icon_my_profile"/>
 
                         <ImageView
                             android:id="@+id/imageView_sub2"
                             android:background="#847898"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-
-                            tools:srcCompat="@tools:sample/avatars" />
+                            android:src="@drawable/ic_icon_my_profile" />
 
 
                     </LinearLayout>
@@ -253,16 +262,14 @@
                             android:background="#432534"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-
-                            tools:srcCompat="@tools:sample/avatars" />
+                            android:src="@drawable/ic_icon_my_profile" />
 
                         <ImageView
                             android:id="@+id/imageView_sub4"
                             android:background="#321302"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-
-                            tools:srcCompat="@tools:sample/avatars" />
+                            android:src="@drawable/ic_icon_my_profile"/>
 
 
                     </LinearLayout>
@@ -274,6 +281,7 @@
             </LinearLayout>
 
             <TextView
+                android:fontFamily="@font/coockierunregular"
                 android:text="사진은 대표사진 포함 최소 3장 이상 업로드 되어야 합니다 :)"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -282,6 +290,7 @@
                 android:gravity="center"/>
 
             <Button
+                android:fontFamily="@font/coockierunregular"
                 android:id="@+id/picture_upload"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -303,6 +312,7 @@
                 android:orientation="horizontal"
                 android:layout_weight="6">
                 <TextView
+                    android:fontFamily="@font/coockierunregular"
                     android:text="직업 : "
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -310,6 +320,7 @@
                     android:textSize="20dp"
                     android:gravity="center"/>
                 <EditText
+                    android:fontFamily="@font/coockierunregular"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"/>
@@ -322,6 +333,7 @@
                 android:orientation="horizontal"
                 android:layout_weight="1">
                 <TextView
+                    android:fontFamily="@font/coockierunregular"
                     android:text="직장 : "
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -329,12 +341,14 @@
                     android:textSize="20dp"
                     android:gravity="center"/>
                 <EditText
+                    android:fontFamily="@font/coockierunregular"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"/>
             </LinearLayout>
 
             <Button
+                android:fontFamily="@font/coockierunregular"
                 android:id="@+id/work_place_certification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -354,6 +368,7 @@
                 android:orientation="horizontal"
                 android:layout_weight="1">
                 <TextView
+                    android:fontFamily="@font/coockierunregular"
                     android:text="관심사(3개선택)"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -368,7 +383,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-               >
+                >
 
 
                 <LinearLayout
@@ -381,30 +396,35 @@
                     >
 
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_movie"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="영화" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_workout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="운동" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_walk"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="산책" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_music"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="음악" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_cafe"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -423,30 +443,35 @@
                     >
 
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_computer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="컴퓨터" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_game"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="게임" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_sleep"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="잠자기" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_basketball"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="농구" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_soccer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -471,6 +496,7 @@
                 android:orientation="horizontal"
                 android:layout_weight="1">
                 <TextView
+                    android:fontFamily="@font/coockierunregular"
                     android:text="가치관(3개선택)"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -499,30 +525,35 @@
                     >
 
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_meticulous"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="꼼꼼" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_respect"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="존중" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_honor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="명예" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_calm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="차분" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_brisk"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -541,12 +572,14 @@
                     >
 
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_happy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="행복" />
                     <CheckBox
+                        android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_love"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -566,71 +599,74 @@
 
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:visibility="visible"
-            android:background="@android:color/holo_red_dark"
-            android:textColor="@android:color/white"
-            android:id="@+id/back"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:text="뒤로가기"
-            android:textSize="15dp"
-            android:layout_marginTop="5dp"/>
+            <Button
+                android:fontFamily="@font/coockierunregular"
+                android:visibility="visible"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:id="@+id/back"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="뒤로가기"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"/>
 
-        <Button
-            android:visibility="visible"
-            android:id="@+id/next"
-            android:background="@android:color/holo_red_dark"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:text="다음(1/2)"
-            android:textSize="15dp"
-            android:layout_marginTop="5dp" />
+            <Button
+                android:fontFamily="@font/coockierunregular"
+                android:visibility="visible"
+                android:id="@+id/next"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="다음(1/2)"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp" />
 
-        <Button
-            android:visibility="gone"
-            android:id="@+id/previous"
-            android:background="@android:color/holo_red_dark"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:text="이전(1/2)"
-            android:textSize="15dp"
-            android:layout_marginTop="5dp" />
+            <Button
+                android:visibility="gone"
+                android:id="@+id/previous"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="이전(1/2)"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp" />
 
-        <Button
-            android:visibility="gone"
-            android:id="@+id/done"
-            android:background="@android:color/holo_red_dark"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:text="제출(2/2)"
-            android:textSize="15dp"
-            android:layout_marginTop="5dp" />
+            <Button
+                android:fontFamily="@font/coockierunregular"
+                android:visibility="gone"
+                android:id="@+id/done"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="제출(2/2)"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp" />
 
 
-    </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 

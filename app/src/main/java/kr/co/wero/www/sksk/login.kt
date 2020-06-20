@@ -38,7 +38,8 @@ class login : AppCompatActivity() {
 
 
         login.setOnClickListener {
-            val main= Intent(applicationContext,BluetoothSearch2::class.java)
+            //val main= Intent(applicationContext,BluetoothSearch2::class.java)
+            val main=Intent(applicationContext,mainpage::class.java)
             startActivity(main)
         }
 

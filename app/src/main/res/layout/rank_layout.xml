@@ -5,6 +5,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
+        android:id="@+id/profile"
         android:src="@drawable/boy"
         android:background="@drawable/circle"
         android:backgroundTint="#000000"
