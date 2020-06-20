@@ -62,11 +62,11 @@ class mainpage : AppCompatActivity() {
         setContentView(R.layout.activity_mainpage)
 
 
-//        m_address = intent.getStringExtra(BluetoothSearch2.EXTRA_NAME)
-//
-//        ConnectToDevice(this).execute()
-//
-//        mTxtReceive = findViewById<View>(R.id.heartbeat) as TextView
+        m_address = intent.getStringExtra(BluetoothSearch2.EXTRA_ADDRESS)
+
+        ConnectToDevice(this).execute()
+
+        mTxtReceive = findViewById<View>(R.id.heartbeat) as TextView
         drawerlayout=findViewById(R.id.drawerlayout)
         navigationView=findViewById(R.id.nav_view)
         toolbar=findViewById(R.id.mytoolbar)

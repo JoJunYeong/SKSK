@@ -48,8 +48,8 @@ class BluetoothSearch2 : AppCompatActivity() {
         val namelist : ArrayList<String> = ArrayList()
         if (!m_pairedDevices.isEmpty()) {
             for (device: BluetoothDevice in m_pairedDevices) {
-                list.add(device.name+"("+device.address+")")
-                namelist.add(device.name+"("+device.address+")")
+                list.add(device.address)
+                namelist.add(device.address)
                 Log.i("device", ""+device.name)
             }
         } else {
@@ -65,7 +65,7 @@ class BluetoothSearch2 : AppCompatActivity() {
 
             val intent = Intent(this, mainpage::class.java)
             //           intent.putExtra(EXTRA_ADDRESS, address)
-            intent.putExtra(EXTRA_NAME, device)
+            intent.putExtra(EXTRA_ADDRESS, device)
             startActivity(intent)
         }
     }
