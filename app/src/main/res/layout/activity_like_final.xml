@@ -114,7 +114,7 @@
 
 
                 <ImageView
-                    android:id="@+id/back_btn"
+                    android:id="@+id/back"
                     android:src="@drawable/ic_icon_back"
                     android:layout_width="50dp"
                     android:layout_gravity="center_vertical"
