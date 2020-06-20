@@ -6,10 +6,14 @@ import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothSocket
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.AsyncTask
 import android.os.Bundle
 import android.os.Handler
 import android.provider.ContactsContract
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.view.KeyEvent
 import android.view.View
@@ -48,7 +52,7 @@ class mainpage : AppCompatActivity() {
         var m_isConnected: Boolean = false
         lateinit var m_address: String
         lateinit var m_name: String
-
+        lateinit var heartbeatstr : String
 
 
 
@@ -63,6 +67,8 @@ class mainpage : AppCompatActivity() {
 
 
         m_address = intent.getStringExtra(BluetoothSearch2.EXTRA_ADDRESS)
+
+
 
         ConnectToDevice(this).execute()
 
@@ -304,11 +310,35 @@ class mainpage : AppCompatActivity() {
 
                         val strInput = String(buffer, 0, 4)
 
+
                         /*
                          * If checked then receive text, better design would probably be to stop thread if unchecked and free resources, but this is a quick fix
                          */
                         mTxtReceive?.post(Runnable {
                             mTxtReceive!!.text = strInput
+                            heartbeatstr = strInput
+
+
+                            /*
+                           val mSpannableString = SpannableString(mTxtReceive!!.text)
+                           val mRed = ForegroundColorSpan(Color.RED)
+                           val mGreen = ForegroundColorSpan(Color.GREEN)
+                           val mBlack = ForegroundColorSpan(Color.BLACK)
+
+                           if(heartbeat>=80)
+                           {
+                               mSpannableString.setSpan(mRed,0,4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                           }
+                           else if(heartbeat<80&&heartbeat>=60)
+                           {
+                               mSpannableString.setSpan(mGreen,0,4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                           }
+                           else if(heartbeat<60)
+                           {
+                               mSpannableString.setSpan(mBlack,0,4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                           }
+                           */
+
                             /*
                                                     int txtLength = mTxtReceive.getEditableText().length();
                                                     if(txtLength > mMaxChars){
