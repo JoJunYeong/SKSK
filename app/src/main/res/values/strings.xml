@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">심쿵신쿵</string>
+    <string name="app_name">Heartbeat Match</string>
     <string name="findidpw"><u>아이디/비밀번호 찾기</u></string>
     <string name="privatepolicy"><u>개인 정보 보호 정책</u></string>
     <string name="title_activity_settings">SettingsActivity</string>
