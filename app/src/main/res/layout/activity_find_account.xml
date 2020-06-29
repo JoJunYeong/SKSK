@@ -39,7 +39,7 @@
                 android:paddingBottom="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="아이디찾기"
+                android:text="Find ID"
                 android:textStyle="bold"
                 android:textSize="40dp"/>
             <LinearLayout
@@ -50,7 +50,7 @@
                 android:orientation="horizontal">
                 <TextView
                     android:fontFamily="@font/coockierunregular"
-                    android:text="이름 : "
+                    android:text="Name : "
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -71,7 +71,7 @@
                 android:layout_weight="1">
                 <TextView
                     android:fontFamily="@font/coockierunregular"
-                    android:text="전화 번호 : "
+                    android:text="Phone : "
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2.5"
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:text="인증하기"
+                android:text="Verify"
                 android:textSize="15dp"
                 android:layout_marginTop="5dp"/>
 
@@ -110,7 +110,7 @@
                 android:fontFamily="@font/coockierunregular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="비밀번호찾기"
+                android:text="Find PassWord"
                 android:textSize="40dp"/>
 
 
@@ -119,14 +119,15 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
+
                 <TextView
-                    android:fontFamily="@font/coockierunregular"
-                    android:text="아이디 : "
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="59dp"
                     android:layout_weight="3"
-                    android:textSize="20dp"
-                    android:gravity="center"/>
+                    android:fontFamily="@font/coockierunregular"
+                    android:gravity="center"
+                    android:text="ID : "
+                    android:textSize="20dp" />
                 <EditText
                     android:fontFamily="@font/coockierunregular"
                     android:layout_width="match_parent"
@@ -141,7 +142,7 @@
                 android:layout_weight="1">
                 <TextView
                     android:fontFamily="@font/coockierunregular"
-                    android:text="전화 번호 : "
+                    android:text="Phone : "
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2.5"
@@ -163,7 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:text="인증하기"
+                android:text="Verify"
                 android:textSize="15dp"
                 android:layout_marginTop="5dp"/>
 

@@ -65,7 +65,7 @@
         android:layout_height="match_parent">
         <Button
             android:id="@+id/message_back"
-            android:text="뒤로가기"
+            android:text="Back"
             android:textSize="20dp"
             android:textColor="#ffffff"
             android:background="#ff0000"

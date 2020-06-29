@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                     <TextView
-                        android:text="김철수, 24"
+                        android:text="Jason, 24"
                         android:gravity="center"
                         android:textSize="40dp"
                         android:textColor="#000000"
@@ -97,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
-                    android:text="건국대학교"
+                    android:text="KonKuk Univ"
                     android:gravity="center"
                     android:textSize="20dp"
                     android:textColor="#000000"
@@ -132,7 +132,7 @@
                         android:layout_height="match_parent"/>
                     <TextView
                         android:layout_weight="3"
-                        android:text="설정"
+                        android:text="Setting"
                         android:gravity="center"
                         android:textColor="#000000"
                         android:layout_width="match_parent"
@@ -160,7 +160,7 @@
                         android:layout_height="match_parent"/>
                     <TextView
                         android:layout_weight="3"
-                        android:text="프로필 수정"
+                        android:text="Profile change"
                         android:gravity="center"
                         android:textColor="#000000"
                         android:layout_width="match_parent"
@@ -189,7 +189,7 @@
                         android:layout_height="match_parent"/>
                     <TextView
                         android:layout_weight="3"
-                        android:text="미디어 추가"
+                        android:text="Add media"
                         android:gravity="center"
                         android:textColor="#000000"
                         android:layout_width="match_parent"
@@ -225,7 +225,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
-                        android:text="연결된 기기 상태 : ABC-123"
+                        android:text="Connected Device state : ABC-123"
                         android:textSize="20dp"
                         android:gravity="center"
                         android:textColor="#000000"
@@ -236,14 +236,15 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="76dp"
                         android:layout_weight="1"
-                        android:text="기기 연결 상태 : "
-                        android:textSize="20dp"
-                        android:textColor="#000000"
                         android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:text="Connected device state : "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
                     <TextView
                         android:layout_weight="2"
                         android:text="양호"
@@ -280,7 +281,7 @@
                 android:layout_height="0dp"/>
             <Button
                 android:id="@+id/back_btn"
-                android:text="뒤로 가기"
+                android:text="Back"
                 android:background="#ff0000"
                 android:textSize="20dp"
                 android:textColor="#ffffff"

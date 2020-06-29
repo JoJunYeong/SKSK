@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="20dp"
-            android:text="개인정보 보호방침"
+            android:text="Privacy Policy"
             android:textSize="40dp"
             android:textStyle="bold" />
 
@@ -65,36 +65,36 @@
                     android:layout_marginBottom="20dp"
                     android:layout_weight="5"
                     android:gravity="center"
-                    android:text="같이 산야에 피어나는 군영과 같이 이상은 실로 인간의 부패를 방지하는 소금이라 할지니
-    인생에 가치를 주는 원질이 인간의 동산에는 사랑의 풀이 돋고 이상의 꽃이 피고 희망의 놀이 뜨고 열락의 새가 운다사
-    랑의 풀이 없으면 인간은 사막이다 오아이스도 없는 사막이다 보이는 끝까지 찾아다녀도
-    목숨이 있는 때까지 방황하여도 보이는 것은 거친 모래뿐일 것이다 이상의 꽃이 없으면 쓸
-    쓸한 인간에 남는 것은 영락과 부패 기관과 같이 힘있다 이것이다 인류의 역사를 꾸며 내려온 동력은 바로 이것이다 이성은 투
-    명하되 얼음과 같으며 지혜는 날카로우나 갑같이 산야에 피어나는 군영과 같이 이상은 실
-    로 인간의 부패를 방지하는 소금이라 할지니
-    인생에 가치를 주는 원질이
-    인간의 동산에는 사랑의 풀이 돋고 이상의 꽃
-    이 피고 희망의 놀이 뜨고 열락의 새가 운다사
-    랑의 풀이 없으면 인간은 사막이다 오아이스
-    도 없는 사막이다 보이는 끝까지 찾아다녀도
-    목숨이 있는 때까지 방황하여도 보이는 것은
-    거친 모래뿐일 것이다 이상의 꽃이 없으면 쓸
-    쓸한 인간에 남는 것은 영락과 부패
-    기관과 같이 힘있다 이것이다 인류의 역사를
-    꾸며 내려온 동력은 바로 이것이다 이성은 투
-    명하되 얼음과 같으며 지혜는 날카로우나 갑같이 산야에 피어나는 군영과 같이 이상은 실
-    로 인간의 부패를 방지하는 소금이라 할지니
-    인생에 가치를 주는 원질이
-    인간의 동산에는 사랑의 풀이 돋고 이상의 꽃
-    이 피고 희망의 놀이 뜨고 열락의 새가 운다사
-    랑의 풀이 없으면 인간은 사막이다 오아이스
-    도 없는 사막이다 보이는 끝까지 찾아다녀도
-    목숨이 있는 때까지 방황하여도 보이는 것은
-    거친 모래뿐일 것이다 이상의 꽃이 없으면 쓸
-    쓸한 인간에 남는 것은 영락과 부패
-    기관과 같이 힘있다 이것이다 인류의 역사를
-    꾸며 내려온 동력은 바로 이것이다 이성은 투
-    명하되 얼음과 같으며 지혜는 날카로우나 갑"
+                    android:text="It's a salt that prevents human decay, like a colony that blooms in the wild together.
+The essence that gives value to life is the grass of love in the human garden, the flower of ideal blooms, the play of hope rises, and the bird of paradise cries.
+Without Lang's grass, man is a desert, a desert without an oice, looking for what seems to be a desert.
+The only thing you'll see if you wander until you're alive is rough sand. If there are no flowers above, we will use them.
+What remains of a bitter human being is as powerful as the institutions of eternal youth and corruption. This is the driving force behind human history. reasoned two
+an ideal thread, such as an army camp that commands but is ice-like, and has sharp wisdom, but blooms in the mountains.
+It's called salt to prevent human decay.
+The raw material that gives value to life.
+The grass of love grows on the human garden and the flower of ideal.
+This defendant's play of hope and the bird of paradise cries.
+Without Lang's grass, man is desert. Oasis.
+It's a desert without a desert, looking for it till it looks like it.
+What you can see when you wander till your life is gone
+It'll be just rough sand. If there are no flowers above, we will use them.
+What remains of a bitter human being is glory and corruption.
+be as powerful as an organ This is the history of mankind.
+This is the driving force that has been invented. reasoned two
+an ideal thread, such as an army camp that commands but is ice-like, and has sharp wisdom, but blooms in the mountains.
+It's called salt to prevent human decay.
+The raw material that gives value to life.
+The grass of love grows on the human garden and the flower of ideal.
+This defendant's play of hope and the bird of paradise cries.
+Without Lang's grass, man is desert. Oasis.
+It's a desert without a desert, looking for it till it looks like it.
+What you can see when you wander till your life is gone
+It'll be just rough sand. If there are no flowers above, we will use them.
+What remains of a bitter human being is glory and corruption.
+be as powerful as an organ This is the history of mankind.
+This is the driving force that has been invented. reasoned two
+Command, but like ice, and wisdom is sharp."
                     android:textSize="15dp" />
 
             </LinearLayout>

@@ -42,7 +42,7 @@
             android:fontFamily="@font/coockierunregular"
             android:textColor="#000000"
             android:textStyle="bold"
-            android:text="튜토리얼입니다"
+            android:text="Tutorial Page"
             android:gravity="center"/>
     </LinearLayout>
 </LinearLayout>
