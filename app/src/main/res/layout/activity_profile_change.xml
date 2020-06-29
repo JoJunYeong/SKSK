@@ -107,7 +107,7 @@
                 android:gravity="center"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="대표사진 포함 사진 3개는 필수입니다."
+                android:text="3 photos including the representative picture are required."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <LinearLayout
@@ -123,7 +123,7 @@
                     android:textColor="#ffffff"
                     android:textSize="15dp"
                     android:textStyle="bold"
-                    android:text="업로드"
+                    android:text="Upload"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -144,12 +144,12 @@
                         android:textColor="#000000"
                         android:gravity="center"
                         android:layout_weight="5"
-                        android:text="직업"
-                        android:layout_width="match_parent"
+                        android:text="Career"
+                        android:layout_width="450dp"
                         android:layout_height="match_parent"/>
                     <EditText
                         android:fontFamily="@font/coockierunregular"
-                        android:hint="예전에 입력하였던 직업"
+                        android:hint="The job I entered before"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
@@ -165,12 +165,12 @@
                         android:textColor="#000000"
                         android:gravity="center"
                         android:layout_weight="3"
-                        android:text="직장/학교"
+                        android:text="Job/School"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
                     <EditText
                         android:fontFamily="@font/coockierunregular"
-                        android:hint="직업을 입력해주세요"
+                        android:hint="Please enter your job"
                         android:layout_weight="2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
@@ -183,7 +183,7 @@
                         android:textStyle="bold"
                         android:layout_marginLeft="5dp"
                         android:layout_weight="3"
-                        android:text="인증"
+                        android:text="Certified."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
@@ -197,7 +197,7 @@
                 android:layout_weight="1">
                 <TextView
                     android:fontFamily="@font/coockierunregular"
-                    android:text="관심사"
+                    android:text="Interests"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
 
@@ -232,35 +232,35 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="영화" />
+                        android:text="Movie" />
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_workout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="운동" />
+                        android:text="Exercise" />
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_walk"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="산책" />
+                        android:text="Stroll" />
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_music"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="음악" />
+                        android:text="Music" />
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_cafe"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="카페" />
+                        android:text="Cafe" />
 
                 </LinearLayout>
 
@@ -279,21 +279,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="컴퓨터" />
+                        android:text="Computer" />
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_game"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="게임" />
+                        android:text="Game" />
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
                         android:id="@+id/hobby_sleep"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="잠자기" />
+                        android:text="Sleep" />
                     <CheckBox
                         android:checked="true"
                         android:fontFamily="@font/coockierunregular"
@@ -301,15 +301,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="농구" />
-                    <CheckBox
-                        android:checked="true"
-                        android:fontFamily="@font/coockierunregular"
-                        android:id="@+id/hobby_soccer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:text="축구" />
+                        android:text="Basketball" />
+
 
                 </LinearLayout>
 
@@ -330,7 +323,7 @@
                 android:layout_weight="1">
                 <TextView
                     android:fontFamily="@font/coockierunregular"
-                    android:text="가치관"
+                    android:text="Value"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
 
@@ -363,7 +356,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="꼼꼼" />
+                        android:text="Precisely" />
                     <CheckBox
                         android:checked="true"
                         android:fontFamily="@font/coockierunregular"
@@ -371,21 +364,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="존중" />
+                        android:text="Respect" />
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_honor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="명예" />
+                        android:text="Honor" />
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
                         android:id="@+id/personal_calm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="차분" />
+                        android:text="Calm" />
                     <CheckBox
                         android:checked="true"
                         android:fontFamily="@font/coockierunregular"
@@ -393,7 +386,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="활발" />
+                        android:text="Active" />
 
                 </LinearLayout>
 
@@ -411,7 +404,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="행복" />
+                        android:text="Happy" />
 
                     <CheckBox
                         android:fontFamily="@font/coockierunregular"
@@ -419,7 +412,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="사랑" />
+                        android:text="Love" />
 
                 </LinearLayout>
 
@@ -431,7 +424,7 @@
                     android:layout_height="wrap_content">
                     <Button
                         android:id="@+id/saveBtn"
-                        android:text="저장"
+                        android:text="Save"
                         android:textColor="#ffffff"
                         android:background="#ff0000"
                         android:textSize="20dp"

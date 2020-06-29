@@ -17,7 +17,7 @@
         android:id="@+id/userId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="사용자 이름"
+        android:text="User Name"
         android:fontFamily="@font/coockierunregular"
         android:textColor="#000000"
         android:textSize="20dp"/>
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/userGender"
-            android:text="사용자 성별"
+            android:text="User sex"
             android:textColor="#f2f2f2"
             android:fontFamily="@font/coockierunregular"
             android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/userAge"
-            android:text="사용자 나이"
+            android:text="User age"
             android:textColor="#f2f2f2"
             android:fontFamily="@font/coockierunregular"
             android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/userJob"
-            android:text="사용자 직업"
+            android:text="User career"
             android:textColor="#f2f2f2"
             android:fontFamily="@font/coockierunregular"
             android:layout_width="wrap_content"
